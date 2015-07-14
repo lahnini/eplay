@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,7 @@ import com.konka.eplay.model.CommonResult;
 import com.konka.eplay.model.FileComparator;
 import com.konka.eplay.model.LocalDiskInfo;
 import com.konka.eplay.modules.CommonFileInfo;
+import com.konka.eplay.modules.IntegratedRelativeLayout;
 import com.konka.eplay.modules.Operation;
 import com.konka.eplay.modules.ScrollGridView;
 
@@ -32,7 +34,7 @@ import java.util.List;
 
 import iapp.eric.utils.base.Trace;
 
-public class FilesActivity extends Activity {
+public class FilesActivity extends Activity   {
 
     private ScrollGridView mGridView;
     private TextView mEmptyView;
@@ -144,8 +146,45 @@ public class FilesActivity extends Activity {
         mEmptyView = (TextView) this.findViewById(R.id.local_files_empty_view);
 
         mGridView.setBorderView(mBordView);
-    }
+        mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                String path = sFileList.get(position).getPath();
+                Trace.Debug("#Click GridView" + path + "/type=" + Utils.getMmt(path));
+                if (!sFileList.get(position).isDir()) {
+                    switch (Utils.getMmt(path)) {
+
+                        case MMT_MOVIE:
+                            Trace.Debug("#ClickMovie" + position);
+                            break;
+                        case MMT_MUSIC:
+                            Trace.Debug("#ClickMusic" + position);
+                            break;
+                        case MMT_PHOTO:
+                            Trace.Debug("#ClickPhoto" + position);
+                            break;
+                        case MMT_APK:
+                            Trace.Debug("#ClickApk" + position);
+                            break;
+                        case MMT_DOCUMENT:
+                            Trace.Debug("#ClickDoucument" + position);
+                            break;
+                        case MMT_ARCHIVE:
+                            Trace.Debug("#ClickArc" + position);
+                            break;
+                        default:
+                            break;
+                    }
+                }else{
+
+                    Trace.Debug("#ClickFolder"+position);
+                    mOperation.getInstance().list(path, Constant.LIST_TYPE.ALL);
+
+                }
+            }
+        });
+    }
 
     public void onEventMainThread(IEvent event) {
         Trace.Debug("####onEventMainThread");
@@ -158,7 +197,7 @@ public class FilesActivity extends Activity {
             if (result.code == CommonResult.OK && result.time >= startTime) {
                 startTime = result.time;
 
-//                sFileList.clear();
+                sFileList.clear();
                 List<CommonFileInfo> list = (List<CommonFileInfo>) (result.data);
                 sFileList.addAll(list);
 

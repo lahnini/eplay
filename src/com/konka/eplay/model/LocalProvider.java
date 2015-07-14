@@ -227,7 +227,7 @@ private static boolean stopScan=false;
 			result.code = CommonResult.OK;
 			Trace.Debug("resultcode="+CommonResult.OK);
 			result.data = list;
-			
+
 		} else {
 			result.data = new String("传入路径无效");
 		}
@@ -236,6 +236,7 @@ private static boolean stopScan=false;
 		event.type = Constant.MSG_LIST;
 		event.result = result;
 		EventDispatchCenter.getInstance().post(event);
+
 	}
 
 	/**

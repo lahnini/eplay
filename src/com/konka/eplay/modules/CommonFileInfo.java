@@ -120,6 +120,7 @@ public class CommonFileInfo implements Serializable {
 		this.isDir = file.isDirectory();
 		this.modifiedTime = new Date(file.lastModified());
 		this.createdTime = modifiedTime; // 暂时也设置为�?后修改时�?
+		this.type=Utils.getMmt(file.getAbsolutePath());
 		if (this.isDir) {
 			File[] subs = file.listFiles();
 			if (subs != null) {

@@ -19,6 +19,7 @@ import android.widget.ImageView;
 
 import com.konka.eplay.Constant;
 import com.konka.eplay.R;
+import com.konka.eplay.modules.files.FilesActivity;
 
 
 /**
@@ -585,5 +586,6 @@ public class ScrollGridView extends GridView {
 			mBorderView.setVisibility(visibility);
 		}
 	}
+
 
 }

@@ -52,6 +52,9 @@ public class Utils {
 	private static String[] sExtImage = null; // 图片
 	private static String[] sExtAudio = null; // 音乐
 	private static String[] sExtVideo = null; // 电影
+	private static String[] sExtDoc = null; // 文档
+	private static String[] sExtApk = null; // apk
+	private static String[] sExtArc = null; // 压缩包
 	private static Map<String, MultimediaType> sExtMap;
 	private static ArrayList<LocalDiskInfo> sUsbList;
 	static {
@@ -217,6 +220,12 @@ public class Utils {
 						R.array.extensionImage);
 		sExtVideo = context.getResources().getStringArray(
 						R.array.extensionVideo);
+		sExtDoc = context.getResources().getStringArray(
+				R.array.extensionDocument);
+		sExtApk = context.getResources().getStringArray(
+				R.array.extensionPackage);
+		sExtArc = context.getResources().getStringArray(
+				R.array.extensionArchive);
 
 		for (String ext : sExtAudio) {
 			sExtMap.put(ext, MultimediaType.MMT_MUSIC);
@@ -228,6 +237,15 @@ public class Utils {
 			sExtMap.put(ext, MultimediaType.MMT_MOVIE);
 		}
 
+		for (String ext : sExtDoc) {
+			sExtMap.put(ext, MultimediaType.MMT_DOCUMENT);
+		}
+		for (String ext : sExtApk) {
+			sExtMap.put(ext, MultimediaType.MMT_APK);
+		}
+		for (String ext : sExtArc) {
+			sExtMap.put(ext, MultimediaType.MMT_ARCHIVE);
+		}
 	}
 
 	/**
