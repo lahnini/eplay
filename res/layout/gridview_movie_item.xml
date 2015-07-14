@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="@dimen/movie_gridview_item_width"
+        android:layout_height="@dimen/movie_gridview_item_height"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="@dimen/movieplayer_listitem_img_width"
+            android:layout_height="@dimen/movieplayer_listitem_img_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@color/transparent" >
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="@dimen/movieplayer_listitem_img_width"
+                android:layout_height="@dimen/movieplayer_listitem_img_height"
+                android:background="@color/black"
+                android:scaleType="fitCenter"
+                android:src="@drawable/v" />
+
+            <TextView
+                android:id="@+id/play_record"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/mainpage_mask"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="16sp" 
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="@dimen/movie_gridview_item_width"
+        android:layout_height="@dimen/movie_gridview_item_height"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="@dimen/movieplayer_listitem_img_width"
+            android:layout_height="127.5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="27.5dp"
+            android:background="@color/transparent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="17.4dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/com_folder" />
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="@dimen/movieplayer_listitem_img_width"
+                android:layout_height="@dimen/movieplayer_listitem_img_height"
+                android:layout_gravity="bottom"
+                android:background="@color/black"
+                android:scaleType="fitCenter"
+                android:src="@drawable/v" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/mainpage_mask"
+                android:paddingRight="9dp" >
+
+                <!--
+                <ImageView
+                    android:id="@+id/file_tag"
+                    android:layout_width="29dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/movie_icon" />
+                -->
+
+                <TextView
+                    android:id="@+id/video_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

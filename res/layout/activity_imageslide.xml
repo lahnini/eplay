@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <!--   <android.support.v4.view.ViewPager -->
+    <FrameLayout 
+        android:id="@+id/picture_slide_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+	    <com.konka.eplay.modules.photo.CustomScrollViewPager
+	        android:id="@+id/image_slide_viewpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:background="@color/black"/>
+        <ImageView
+            android:id="@+id/play_slide"
+            android:src="@drawable/picture_slide_play"
+            android:visibility="gone"
+            style="@style/picture_browser_arrow_style"
+            android:layout_gravity="center"/>
+        <!-- 由于ued给的thumb光标是高为64像素的（42dp），且不是.9图，所以高度不能低于42dp -->
+        <!-- 由于没有用到进度条，所以先gone掉 -->
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="39dp"
+            android:gravity="center"
+            android:layout_gravity="top|right"
+            android:visibility="gone"> 
+            <ImageView 
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/slide_seekbar_back"/>      
+            <!-- 通过minHeight和maxHeight来设置高度就可以。。奇怪 --> 
+	        <SeekBar 
+		        android:id="@+id/image_seekbar"
+		        android:layout_width="213dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:minHeight="4dp"
+		        android:maxHeight="4dp"
+		        android:progressDrawable="@drawable/slide_progress_bar"
+		        android:thumb="@drawable/progress_thumb"
+		        android:thumbOffset="25dp"
+		        android:clickable="false"/>
+        	</FrameLayout>
+        	
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="39dp"
+            android:layout_gravity="top|right">  
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/sand_glass_bg"/>    
+            <com.konka.eplay.modules.photo.SandGlassImageView
+                android:id="@+id/sand_glass_view"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center"
+            	android:alpha="0.6"/>
+            <TextView
+                android:id="@+id/sand_time_textView"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/white"
+            	android:textSize="20sp"
+            	android:gravity="center"
+            	android:text="时间"
+            	android:alpha="0.6"
+            	android:layout_gravity="center_horizontal"
+            	android:layout_marginTop="48dp"
+            	android:visibility="gone"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

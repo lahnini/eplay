@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/musicdialog_root"
+    android:layout_width="986dp"
+    android:layout_height="478dp"
+    android:background="@drawable/photo_music_bg" >
+
+    <TextView
+        android:id="@+id/musicdialog_title"
+        android:layout_width="870dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="58dp"
+        android:text="选中喜欢的背景音乐吧~"
+        android:textColor="#c1c1c1"
+        android:textSize="24sp" />
+
+    <com.konka.eplay.modules.music.MusicListView
+        android:id="@+id/listView_in_music_entry_photo"
+        android:layout_width="870dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/musicdialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="20dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="11.7dp"
+        android:listSelector="@drawable/music_imagebutton_selector"
+        android:nextFocusLeft="@id/listView_in_music_entry_photo"
+        android:scrollbarThumbVertical="@drawable/scroller_thumb" >
+    </com.konka.eplay.modules.music.MusicListView>
+
+
+
+</RelativeLayout>

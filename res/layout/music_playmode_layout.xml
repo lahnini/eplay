@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="160dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/music_mode_effective_popup" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/playmode_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/music_gridview_selector"
+        android:paddingLeft="16dp" >
+
+        <ImageView
+            android:id="@+id/music_image_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="8dp"
+            android:src="@drawable/music_mode_single" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/music_image_single"
+             android:layout_marginLeft="8dp"
+            android:text="@string/music_playmode_single"
+            android:textColor="#d6d6d6"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playmode_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/music_gridview_selector"
+        android:layout_marginTop="51dp"
+        android:paddingLeft="16dp" >
+
+        <ImageView
+            android:id="@+id/music_image_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="8dp"
+            android:src="@drawable/music_mode_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/music_image_circle"
+             android:layout_marginLeft="8dp"
+            android:text="@string/music_playmode_order"
+            android:textColor="#d6d6d6"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playmode_random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/music_gridview_selector"
+        android:paddingLeft="16dp" >
+
+        <ImageView
+            android:id="@+id/music_image_dandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/music_mode_random" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/music_image_dandom"
+            android:text="@string/music_playmode_shuffle"
+            android:layout_marginLeft="8dp"
+            android:textColor="#d6d6d6"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</FrameLayout>

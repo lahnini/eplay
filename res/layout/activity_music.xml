@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jbshape" >
+
+    <FrameLayout
+        android:id="@+id/local_music_head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="25dp" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@drawable/layout_selector"
+            android:focusable="true"
+            android:nextFocusDown="@+id/musicfolder" />
+
+        <ImageView
+            android:id="@+id/backmusic"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/musicbtn"
+            android:textColor="@drawable/movieplayer_textcolor_selector"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/musicfolderlayout"
+        android:layout_width="640dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_music_head_layout"
+        android:layout_marginTop="1dp" >
+
+        <ImageView
+            android:id="@+id/musicfolder"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/layout_selector"
+            android:focusable="true" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="340dp"
+            android:background="@color/transparent"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/musicfolder"
+            android:textColor="#c1c1c1"
+            android:textSize="27sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/musicalllayout"
+        android:layout_width="640dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/local_music_head_layout"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/musicfolderlayout"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/musicall"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:background="@drawable/layout_selector"
+            android:focusable="true" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/musicall"
+            android:textColor="#c1c1c1"
+            android:textSize="27sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/movielinelayout"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="140dp" >
+
+        <ListView
+            android:id="@+id/music_line"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <com.konka.eplay.modules.MyGridView
+        android:id="@+id/music_gridview"
+        android:layout_width="1100dp"
+        android:layout_height="515dp"
+        android:layout_below="@id/musicfolderlayout"
+        android:layout_gravity="center"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:clickable="true"
+        android:columnWidth="229dp"
+        android:descendantFocusability="blocksDescendants"
+        android:fadeScrollbars="true"
+        android:horizontalSpacing="12dp"
+        android:listSelector="@drawable/selected"
+        android:numColumns="4"
+        android:verticalSpacing="40dp" >
+    </com.konka.eplay.modules.MyGridView>
+
+    <LinearLayout
+        android:id="@+id/allmusic_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicfolderlayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/musiclistbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/musiclist"
+                android:text="@string/musiclist"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/musicsingerbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musicsinger"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/musicalbumbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musicalbum"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/musiclikebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musiclike"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal" >
+
+            <FrameLayout
+                android:layout_width="1000dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <ListView
+                    android:id="@+id/musiclist"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:visibility="visible" />
+
+                <ListView
+                    android:id="@+id/musicsinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/musicalbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/musiclike"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/islikeview"
+                android:layout_width="25dp"
+                android:layout_height="500dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="未找到本地音乐"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/music_top_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/topbtn" />
+
+</RelativeLayout>

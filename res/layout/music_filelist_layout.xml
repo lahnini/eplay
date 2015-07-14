@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/jbshape" >
+
+    <RelativeLayout
+        android:id="@+id/musiclist_top"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:nextFocusLeft="@id/musiclist_top"
+        android:nextFocusUp="@id/musiclist_top" >
+
+        <ImageView
+            android:id="@+id/musiclist_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/back_img_selector" />
+
+        <TextView
+            android:id="@+id/musiclist_music_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/musiclist_left_arrow"
+            android:duplicateParentState="true"
+            android:text="@string/music_mudule"
+            android:textColor="@drawable/back_textcolor_selector"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musiclist_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/musiclist_tabs"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/music_file_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/musiclist_btn_selector"
+                android:focusable="true"
+                android:nextFocusLeft="@id/music_file_mode"
+                android:text="@string/musicall"
+                android:textColor="#707790"
+                android:textSize="26.7sp" />
+
+            <TextView
+                android:id="@+id/music_sort_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/musiclist_btn_selector"
+                android:focusable="true"
+                android:nextFocusRight="@id/music_sort_mode"
+                android:text="@string/musicfolder"
+                android:textColor="#707790"
+                android:textSize="26.7sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="500dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="41.7dp"
+            android:background="@drawable/musiclist_tabs_bg" />
+
+        <View
+            android:id="@+id/music_file_mode_selected"
+            android:layout_width="189dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="40.5dp"
+            android:background="@drawable/musiclist_tab_selected"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/music_sort_mode_selected"
+            android:layout_width="189dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40.5dp"
+            android:background="@drawable/musiclist_tab_selected"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/music_mode_focus_left"
+            android:layout_width="200dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="34.4dp"
+            android:background="@drawable/musiclist_tabs_focus"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/music_mode_focus_right"
+            android:layout_width="200dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="34.4dp"
+            android:background="@drawable/musiclist_tabs_focus"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+        <RelativeLayout
+        android:id="@+id/music_file_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/music_loading_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.7dp" />
+
+        <TextView
+            android:id="@+id/music_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_loading_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="加载中"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/musiclist_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/music_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="未找到本地音乐"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
+
+        <ImageView
+        android:id="@+id/musiclist_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</FrameLayout>

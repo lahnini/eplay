@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView 
+        android:id="@+id/picture_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/picture_info_text"
+        android:textColor="@color/picture_info_text_dim"
+        android:gravity="right"
+        android:text="@string/unknown"/>
+    <TextView 
+        android:id="@+id/picture_info_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/picture_info_text"
+        android:textColor="@color/picture_info_text_dim"
+        android:gravity="center"
+        android:layout_marginLeft="2dp"
+        android:text=":"/>
+    <com.konka.eplay.modules.AlwaysMarqueeTextView 
+        android:id="@+id/picture_info_content"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/picture_info_text"
+        android:textColor="@color/picture_info_text_bright"
+        android:gravity="left"
+        android:layout_marginLeft="15dp"
+        android:text="@string/unknown"
+        android:singleLine="true"
+		android:ellipsize="marquee"/>    
+    
+</LinearLayout>

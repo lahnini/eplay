@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="270dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/music_mode_effective_popup" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_nornal"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/folk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_folk"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_dance"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/mental"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_metal"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/jazz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_jazz"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/music_gridview_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/music_effective_rock"
+        android:textColor="#d6d6d6"
+        android:textSize="16sp" />
+
+</FrameLayout>

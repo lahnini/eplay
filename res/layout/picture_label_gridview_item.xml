@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="169dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="204dp"
+    android:layout_height="169dp"
+        android:gravity="center">
+      <com.konka.eplay.modules.AsyncImageView
+          android:id="@+id/local_gridview_item_img"
+          android:layout_width="201dp"
+          android:layout_height="153dp"
+          android:layout_gravity="center|bottom"
+          android:gravity="center"
+          android:scaleType="centerInside"
+          android:background="@color/white"/>
+      <ImageView
+          android:id="@+id/picture_label"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:visibility="gone"
+          android:scaleType="fitCenter"
+          android:layout_gravity="right|top"/>      
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp" 
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

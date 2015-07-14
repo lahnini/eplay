@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/jbshape"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/backphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="49dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="22dp"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_img_selector" />
+
+            <TextView
+                android:id="@+id/backtxt"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:singleLine="true"
+                android:text="@string/photobtn"
+                android:textColor="@drawable/back_textcolor_selector"
+                android:textSize="@dimen/picture_info_big_title" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/photo_music_tip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/music_tip_bg" />
+
+            <ImageView
+                android:id="@+id/photo_music_wave"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/isplay" />
+
+            <com.konka.eplay.modules.AlwaysMarqueeTextView
+                android:id="@+id/photo_music_songname"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46dp"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:maxWidth="167dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#b6cfe8"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/menutext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/backphoto"
+            android:layout_marginRight="140dp"
+            android:layout_marginTop="13dp"
+            android:gravity="bottom"
+            android:text="@string/more_for_label"
+            android:textColor="#5e6266"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/labellayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backphoto"
+            android:gravity="right|center_vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="110dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/label"
+                    android:textColor="#757971"
+                    android:textSize="20sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp" >
+
+                    <ImageView
+                        android:id="@+id/label_yellow_border"
+                        android:layout_width="65dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/label_button_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/label_yellow"
+                        android:layout_width="30dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/label_one" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="145dp" >
+
+                    <ImageView
+                        android:id="@+id/label_blue_border"
+                        android:layout_width="65dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/label_button_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/label_blue"
+                        android:layout_width="30dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/label_two" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="192dp" >
+
+                    <ImageView
+                        android:id="@+id/label_red_border"
+                        android:layout_width="65dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/label_button_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+
+                    <ImageView
+                        android:id="@+id/label_red"
+                        android:layout_width="30dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/label_three" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/listlayout"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/time_list"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:nextFocusDown="@id/time_list"
+                android:nextFocusUp="@id/time_list"
+                android:nextFocusLeft="@id/time_list"
+                android:nextFocusRight="@+id/local_ablum_gridview"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/name_list"
+                android:layout_width="match_parent"
+                android:layout_height="412dp"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:nextFocusDown="@id/name_list"
+                android:nextFocusUp="@id/name_list"
+                 android:nextFocusLeft="@id/name_list"
+                android:nextFocusRight="@+id/local_ablum_gridview"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/moretime"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="420dp"
+                android:gravity="center"
+                android:text=". . ."
+                android:textColor="#665b88"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <com.konka.eplay.modules.ScrollGridView
+            android:id="@+id/local_ablum_gridview"
+            android:layout_width="1080dp"
+            android:layout_height="490dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:layout_toRightOf="@id/listlayout"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="215dp"
+            android:fadeScrollbars="true"
+            android:horizontalSpacing="35dp"
+            android:listSelector="@drawable/picture_brower_item_focus"
+            android:numColumns="4"
+            android:scrollbarSize="5dp"
+            android:verticalSpacing="40dp" >
+        </com.konka.eplay.modules.ScrollGridView>
+
+        <TextView
+            android:id="@+id/local_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="无法找到图片"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/photo_path"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/local_ablum_gridview"
+            android:layout_below="@id/local_ablum_gridview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#4c426b"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/local_album_top_btn"
+            android:layout_width="76dp"
+            android:layout_height="77dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/movie_focusable_bg"
+            android:scaleType="fitCenter"
+            android:src="@drawable/topbtn"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/border_view_in_mygridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</FrameLayout>

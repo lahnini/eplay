@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <com.konka.eplay.modules.movie.MovieView
+        android:id="@+id/movieview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <SurfaceView
+        android:id="@+id/subtitle_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.konka.eplay.modules.AlwaysMarqueeTextView
+            android:id="@+id/movieplayer_name"
+            android:layout_width="217dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/versions_background"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:singleLine="true"
+            android:text="@string/video_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/movieplayer_pause_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/movieplayer_pause_tag"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="40dp"
+                android:textColor="#FFFF00"
+                android:textSize="43sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/floating_controller"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controller_height"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:visibility="gone" >
+
+            <SeekBar
+                android:id="@+id/play_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:paddingLeft="@dimen/controller_seekbar_margin_left_right"
+                android:paddingRight="@dimen/controller_seekbar_margin_left_right"
+                android:progressDrawable="@drawable/movie_seekbar_progress_2"
+                android:thumb="@drawable/player_seekbar_thumb_play"
+                android:thumbOffset="@dimen/seekbar_thumb_radius" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1000dp"
+                android:layout_marginTop="49dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00：00"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/time_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00：00"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="gone" />
+
+        <!-- 非热区与热区顺序调换的话，就感觉整个控件调换了 奇葩 -->
+        <!-- 非热区 -->
+
+        <FrameLayout
+            android:id="@+id/not_pointer_hotspot"
+            android:layout_width="match_parent"
+            android:layout_height="577dp"
+            android:background="@color/transparent" >
+        </FrameLayout>
+
+        <!-- 鼠标热区 -->
+
+        <FrameLayout
+            android:id="@+id/pointer_hotspot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controller_height"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent" >
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

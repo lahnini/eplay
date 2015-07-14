@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:focusableInTouchMode="true" >
+
+    <!-- afterDescendants 从touch mode进入按键模式，先从children找focusable view，不然聚焦不到children，我猜不这样设置是不会去children找焦点 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controller_height"
+        android:background="@drawable/mask" >
+
+        <SeekBar
+            android:id="@+id/play_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="134dp"
+            android:layout_marginRight="134dp"
+            android:layout_marginTop="3dp"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:progressDrawable="@drawable/movie_seekbar_progress"
+            android:thumb="@drawable/player_seekbar_thumb_play"
+            android:thumbOffset="@dimen/seekbar_thumb_radius" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controller_btn_margin_bottom"
+            android:layout_marginLeft="@dimen/controller_btn_margin_left_right"
+            android:layout_marginTop="@dimen/controller_btn_margin_top" >
+
+            <LinearLayout
+                android:id="@+id/btn_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/controller_btn_size"
+                    android:layout_height="@dimen/controller_btn_size"
+                    android:background="@drawable/movie_focusable_bg"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/movie_btn_replay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="@string/movie_replay"
+                    android:textColor="@drawable/movie_controller_textcolor"
+                    android:textSize="19sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/controller_btn_gap"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/controller_btn_size"
+                    android:layout_height="@dimen/controller_btn_size"
+                    android:background="@drawable/movie_focusable_bg"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/movie_btn_pre" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="@string/movie_pre"
+                    android:textColor="@drawable/movie_controller_textcolor"
+                    android:textSize="19sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/controller_btn_gap"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/controller_btn_size"
+                    android:layout_height="@dimen/controller_btn_size"
+                    android:background="@drawable/movie_focusable_bg"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/movie_btn_next" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="@string/movie_next"
+                    android:textColor="@drawable/movie_controller_textcolor"
+                    android:textSize="19sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/controller_btn_gap"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/controller_btn_size"
+                    android:layout_height="@dimen/controller_btn_size"
+                    android:background="@drawable/movie_focusable_bg"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/movie_btn_list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="@string/movie_list"
+                    android:textColor="@drawable/movie_controller_textcolor"
+                    android:textSize="19sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/controller_btn_gap"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/controller_btn_size"
+                    android:layout_height="@dimen/controller_btn_size"
+                    android:background="@drawable/movie_focusable_bg"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/movie_btn_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="@string/movie_setting"
+                    android:textColor="@drawable/movie_controller_textcolor"
+                    android:textSize="19sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1000dp"
+            android:layout_marginTop="49dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/time_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#a7a7a7"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="#a7a7a7"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/time_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#a7a7a7"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

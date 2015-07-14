@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="187.3dp"
+    android:layout_height="204.7dp"
+    android:background="@color/transparent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_sort"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/music_imagebutton_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="8dp" >
+
+        <ImageView
+            android:id="@+id/setting_arrow_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+          android:layout_marginLeft="14dp"
+            android:src="@drawable/sort_left" />
+
+        <TextView
+            android:id="@+id/setting_sorttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/setting_arrow_left"
+            android:text="智能排序"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/setting_arrow_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/setting_sorttype"
+            android:src="@drawable/sort_right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/setting_clean"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/music_imagebutton_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="清除缓存"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/music_imagebutton_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="版本信息"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+</FrameLayout>

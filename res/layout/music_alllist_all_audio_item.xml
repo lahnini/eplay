@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="870dp"
+    android:layout_height="106.7dp"
+    android:background="@drawable/control_layout_bg"
+    android:gravity="center_vertical" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="106.7dp"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/musiclist_tag_audio_top"
+        android:layout_width="match_parent"
+        android:layout_height="53.3dp" >
+
+        <ImageView
+            android:id="@+id/musiclist_tag_audio"
+            android:layout_width="18dp"
+            android:layout_height="19.33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.3dp"
+            android:src="@drawable/music_icon" />
+
+        <TextView
+            android:id="@+id/allsong_songname_audio"
+            android:layout_width="286.7dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.3dp"
+            android:layout_toRightOf="@id/musiclist_tag_audio"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_unknown_songname"
+            android:textColor="#b2c6ff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/allsong_artist_audio"
+            android:layout_width="153.3dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/allsong_songname_audio"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_unknown_artist"
+            android:textColor="#b2c6ff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/allsong_duration_audio"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/allsong_artist_audio"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_unknown_song_duration"
+            android:textColor="#b2c6ff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/allsong_playing_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/allsong_duration_audio"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_playing"
+            android:textColor="#b2c6ff"
+            android:textSize="20dp" />
+
+         <ImageView
+            android:id="@+id/allsong_like_tag_audio"
+            android:layout_width="26.7dp"
+            android:layout_height="26.7dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/musicplayer_islike_yes"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <com.konka.eplay.modules.music.VisualizerView
+        android:id="@+id/allsong_audioview"
+        android:layout_width="838.7dp"
+        android:layout_height="53.3dp"
+        android:layout_below="@id/musiclist_tag_audio_top"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_root"
+    android:layout_width="354dp"
+    android:layout_height="600dp"
+    android:background="@drawable/control_layout_bg" >
+
+    <ImageView
+        android:id="@+id/music_cover"
+        android:layout_width="354dp"
+        android:layout_height="354dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/m" />
+
+    <ImageView
+        android:id="@+id/music_cover_pause"
+        android:layout_width="354dp"
+        android:layout_height="354dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/music_pause"
+        android:visibility="invisible" />
+
+    <com.konka.eplay.modules.AlwaysMarqueeTextView
+        android:id="@+id/music_control_songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_cover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/music_unknown_songname"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/music_control_islike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:nextFocusLeft="@id/music_control_islike"
+        android:scaleType="center"
+        android:background="@drawable/music_imagebutton_selector"
+        android:src="@drawable/musicplayer_islike_no" />
+
+    <com.konka.eplay.modules.AlwaysMarqueeTextView
+        android:id="@+id/music_control_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_control_songname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/music_unknown_album"
+        android:textColor="#a7a7a7"
+        android:textSize="16sp" />
+
+    <com.konka.eplay.modules.AlwaysMarqueeTextView
+        android:id="@+id/music_control_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_control_album"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/music_unknown_artist"
+        android:textColor="#a7a7a7"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/music_control_seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/music_control_singer"
+        android:layout_marginTop="12dp" >
+
+        <SeekBar
+            android:id="@+id/music_control_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/movie_seekbar_progress"
+            android:thumb="@drawable/player_seekbar_thumb_play"
+            android:thumbOffset="25dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/current_music_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/music_control_seekbar_layout"
+        android:layout_marginLeft="13dp"
+        android:text="00:00"
+        android:textColor="#a7a7a7"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/total_music_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/music_control_seekbar_layout"
+        android:layout_marginRight="13dp"
+        android:text="00:00"
+        android:textColor="#a7a7a7"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp" >
+
+        <ImageButton
+            android:id="@+id/music_control_pre"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_pre"
+            android:src="@drawable/music_pre" />
+
+        <ImageButton
+            android:id="@+id/music_control_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_next"
+            android:src="@drawable/music_next" />
+
+        <ImageButton
+            android:id="@+id/music_control_songlist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_songlist"
+            android:src="@drawable/music_list" />
+
+        <ImageButton
+            android:id="@+id/music_control_mode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_mode"
+            android:src="@drawable/music_mode_circle" />
+
+        <ImageButton
+            android:id="@+id/music_control_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_search"
+            android:src="@drawable/music_search" />
+
+        <Button
+            android:id="@+id/music_control_effective"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="265dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusDown="@id/music_control_effective" />
+
+        <TextView
+            android:id="@+id/music_control_effective_text"
+            android:layout_width="66.6dp"
+            android:layout_height="26.6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="275dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/music_effective_nornal"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</RelativeLayout>

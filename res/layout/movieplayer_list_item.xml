@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="267dp"
+        android:layout_height="177dp" >
+
+            <FrameLayout
+                android:id="@+id/movieplayer_list_item"
+                android:layout_width="249dp"
+                android:layout_height="157dp"
+                android:layout_gravity="center"
+                android:background="@drawable/movie_list_item_bg"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/video_img"
+                    android:layout_width="@dimen/movieplayer_listitem_img_width"
+                    android:layout_height="@dimen/movieplayer_listitem_img_height"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/v" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/movieplayer_listitem_img_width"
+                    android:layout_height="@dimen/movieplayer_listitem_img_height"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:duplicateParentState="true" >
+
+                    <TextView
+                        android:id="@+id/video_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/mainpage_mask"
+                        android:duplicateParentState="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:singleLine="true"
+                        android:text="@string/video_name"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/movieplayer_listitem_cover"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有支持的扩展名在此添加 -->
+<resources>
+    <!-- 图片扩展名数组 -->
+    <array name="extensionImage">
+    	<item>.png</item>
+    	<item>.jpg</item>
+    	<item>.bmp</item>
+    	<item>.jpeg</item>
+    	<item>.gif</item>
+    	<item>.jpe</item>
+    </array>
+    
+    <!-- 音频扩展名数组 -->
+    <array name="extensionAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.midi</item>
+        <item>.m4a</item>
+        <item>.wma</item>
+        <item>.acc</item>
+        <item>.aac</item>
+        <item>.ogg</item>
+        <item>.amr</item>
+    </array>
+    
+    <!-- 视频扩展名数组 -->
+    <array name="extensionVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.3gp</item>
+        <item>.flv</item>
+        <item>.avi</item>
+        <item>.dat</item>
+        <item>.f4ts</item>
+        <item>.f4v</item>
+        <item>.m2ts</item>
+        <item>.mkv</item>
+        <item>.mov</item>
+        <item>.mpeg</item>
+        <item>.mpg</item>
+        <item>.trp</item>
+        <item>.ts</item>
+        <item>.tp</item>
+        <item>.v01</item>
+        <item>.m2ts</item>
+        <item>.von</item>
+        <item>.rm</item>
+        <item>.wmv</item>
+        <item>.tp</item>
+        <item>.mvc</item>
+        <item>.iso</item>
+        <item>.vob</item>
+        <item>.asf</item>
+        <item>.swf</item>
+    </array>
+    
+    <!-- 压缩包扩展名数组 -->
+    <array name="extensionArchive">
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+    </array>
+    
+    <!-- 安装包扩展名数组 -->
+    <array name="extensionPackage">
+        <item>.apk</item>
+    </array>
+    
+    <!-- 文档扩展名数组 -->
+    <array name="extensionDocument">
+        <item>.doc</item>
+        <item>.docx</item>
+        <item>.xls</item>
+        <item>.xlsx</item>
+        <item>.ppt</item>
+        <item>.pptx</item>
+        <item>.pdf</item>
+        <item>.txt</item>
+    </array>
+    
+    <!-- 主题包扩展名数组 -->
+   <!--  <array name="extensionTheme">
+        <item>.mtz</item>
+    </array> -->
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="movie_replay">重播</string>
+    <string name="movie_pre">上一个</string>
+    <string name="movie_next">下一个</string>
+    <string name="movie_list">列表</string>
+    <string name="movie_setting">设置</string>
+    
+    <string name="subtitle_select">字幕选择</string>
+    <string name="audio_track_select">音轨</string>
+    <string name="scale_mode">屏显模式</string>
+    <string name="picture_mode">图像模式</string>
+    <string name="loop_mode">循环模式</string>
+    <string name="backlight">亮度</string>
+    <string name="subtitle">字幕</string>
+    <string name="subtitle_off">字幕关</string>
+    <string name="none">无</string>
+    <string name="audio_track">音轨</string>
+    <string name="screen_full">等比</string>
+    <string name="screen_full_resize">全屏</string>
+    <string name="screen_default">原始</string>
+    <string name="picture_normal">标准</string>
+    <string name="picture_vivid">艳丽</string>
+    <string name="picture_dynamic">动态</string>
+    <string name="picture_soft">柔和</string>
+    <string name="loop_single">单个循环</string>
+    <string name="loop_shuffle">随机</string>
+    <string name="loop_all">顺序</string>
+    <string name="video_name">视频名称</string>
+    <string name="video_not_support">不支持该视频</string>
+    <string name="quit_movie_player">确认退出</string>
+    
+    <string name="playing_text">正在播放</string>
+    
+    <string name="progress_dialog_movie_loading">视频加载中</string>
+    
+
+    <!-- 详情页内容 -->
+    <string name="info_size">大小：</string>
+    <string name="info_resolution">分辩率：</string>
+    <string name="info_duration">时长：</string>
+    <string name="info_date">日期：</string>
+    <string name="info_path">路径：</string>
+    <string name="movie_delete_hint">你确定要删除该视频吗？</string>
+    <string name="movie_delete_success">删除视频成功！</string>
+    
+    <string name="play_completed">已看完</string>
+    <string name="played_to">观看至</string>
+    <string name="can_not_find_video">无法找到视频</string>
+
+</resources>

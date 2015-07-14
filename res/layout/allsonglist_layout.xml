@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/allsong_tab_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="4dp" >
+
+    <RelativeLayout
+        android:id="@+id/allsong_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" >
+
+        <Button
+            android:id="@+id/musiclist_all"
+            android:layout_width="172.7dp"
+            android:layout_height="58dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusLeft="@id/musiclist_all"
+            android:text="@string/musiclist"
+            android:textColor="#a7a7a7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/musiclist_sort_singer"
+            android:layout_width="172.7dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/musiclist_all"
+            android:background="@drawable/music_imagebutton_selector"
+            android:text="@string/musicsinger"
+            android:textColor="#707790"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/musiclist_sort_album"
+            android:layout_width="172.7dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/musiclist_sort_singer"
+            android:background="@drawable/music_imagebutton_selector"
+            android:text="@string/musicalbum"
+            android:textColor="#707790"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/musiclist_favorite"
+            android:layout_width="172.7dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/musiclist_sort_album"
+            android:background="@drawable/music_imagebutton_selector"
+            android:nextFocusRight="@id/musiclist_favorite"
+            android:text="@string/musiclike"
+            android:textColor="#707790"
+            android:textSize="20sp" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/allsong_tabs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/musiclist_all_text"
+            android:layout_width="156.7dp"
+            android:layout_height="40dp"
+            android:background="@drawable/secondtab_selected"
+            android:nextFocusLeft="@id/musiclist_all" />
+
+        <TextView
+            android:id="@+id/musiclist_sort_singer_text"
+            android:layout_width="156.7dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/musiclist_all_text"
+            android:background="@drawable/musiclist_btn_bg"/>
+
+        <TextView
+            android:id="@+id/musiclist_sort_album_text"
+            android:layout_width="156.7dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/musiclist_sort_singer_text"
+            android:background="@drawable/musiclist_btn_bg" />
+
+        <TextView
+            android:id="@+id/musiclist_favorite_text"
+            android:layout_width="156.7dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/musiclist_sort_album_text"
+            android:background="@drawable/musiclist_btn_bg"
+            android:nextFocusRight="@id/musiclist_favorite"/>
+    </RelativeLayout>
+<com.konka.eplay.modules.music.MusicListView
+        android:id="@+id/allsong_listview"
+        android:layout_width="870dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/allsong_tabs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="11.7dp"
+        android:scrollbarThumbVertical="@drawable/scroller_thumb"
+        android:listSelector="@drawable/music_imagebutton_selector"
+        android:nextFocusLeft="@id/allsong_listview" >
+    </com.konka.eplay.modules.music.MusicListView>
+
+    <RelativeLayout
+        android:id="@+id/allsong_top_btn_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginRight="125dp"
+        android:visibility="invisible" >
+
+        <FrameLayout
+            android:id="@+id/allsong_top_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/movie_focusable_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusUp="@id/allsong_top_btn" >
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/topbtn" />
+    </RelativeLayout>
+
+    <com.konka.eplay.modules.music.LikeButton
+        android:id="@+id/allsong_like"
+        android:layout_width="123.4dp"
+        android:layout_height="70.7dp"
+        android:background="@color/transparent"
+        android:clickable="false"
+        android:focusable="false"
+        android:nextFocusDown="@id/allsong_like"
+        android:nextFocusRight="@id/allsong_top_btn"
+        android:nextFocusUp="@id/allsong_like"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/allsong_like_clickButton"
+            android:layout_width="70.7dp"
+            android:layout_height="70.7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/music_imagebutton_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusDown="@id/allsong_like_clickButton"
+            android:nextFocusUp="@id/allsong_like_clickButton" >
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="53.3dp"
+            android:layout_height="53.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.7dp"
+            android:background="@drawable/like_bg" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/allsong_like_image"
+            android:layout_width="26.7dp"
+            android:layout_height="26.7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/musicplayer_islike_no" />
+
+        <FrameLayout
+            android:id="@+id/allsong_detail_clickButton"
+            android:layout_width="70.7dp"
+            android:layout_height="70.7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52.7dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusDown="@id/allsong_detail_clickButton"
+            android:nextFocusLeft="@id/allsong_like_clickButton"
+            android:nextFocusUp="@id/allsong_detail_clickButton" >
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="53.3dp"
+            android:layout_height="53.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="62.4dp"
+            android:background="@drawable/detail_bg" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/allsong_detail_image"
+            android:layout_width="21.3dp"
+            android:layout_height="21.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="77.4dp"
+            android:src="@drawable/detail_music" />
+    </com.konka.eplay.modules.music.LikeButton>
+
+    <TextView
+        android:id="@+id/musiclist_mune_tip"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="118.7dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="@string/music_menu_more"
+        android:textColor="#5e6266"
+        android:textSize="16sp" />
+
+</RelativeLayout>

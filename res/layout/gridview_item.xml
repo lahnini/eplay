@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="204dp"
+    android:layout_height="169dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="204dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/enlargeview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="17.4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/com_folder"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <com.konka.eplay.modules.AsyncImageView
+            android:id="@+id/local_gridview_item_img"
+            android:layout_width="204dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:background="@color/white"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:id="@+id/fphotomsg"
+            android:layout_width="204dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical|left" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cover" />
+
+
+
+            <TextView
+                android:id="@+id/pic_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="test"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ismark"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="179dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/label_yellow"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

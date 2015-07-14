@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">欢迎!</string>
+    <string name="app_name">易播</string>
+    <string name="versionFormatter">版本号：%1$s</string>
+ <!-- 版本信息 -->
+
+    <string name="unknown">未知</string>
+
+    <!-- 测光模式 -->
+    <string name="meter_average">平均</string>
+    <string name="meter_center_average">偏中心平均</string>
+    <string name="meter_spot">点</string>
+    <string name="meter_multi_spot">多点</string>
+    <string name="meter_multi_segment">多区</string>
+    <string name="meter_partial">部分</string>
+
+    <!-- 闪光灯模式 -->
+    <string name="no_flash">无闪光</string>
+    <string name="fired">闪光</string>
+    <string name="fired_return_not_detected">闪光，无选通返回</string>
+    <string name="fired_return_detected">闪光，选通返回</string>
+    <string name="on">闪光，强制</string>
+    <string name="on_return_not_detected">闪光，强制，无选通返回</string>
+    <string name="on_return_detected">闪光，强制，带选通返回</string>
+    <string name="off">无闪光，强制</string>
+    <string name="auto_did_not_fire">无闪光，自动</string>
+    <string name="auto_fired">闪光，自动</string>
+    <string name="auto_fired_return_not_detected">闪光，自动，无选通返回</string>
+    <string name="auto_fired_return_detected">闪光，自动，带选通返回</string>
+    <string name="no_flash_function">无闪光功能</string>
+    <string name="firde_red_eye_reduction">闪光，红眼</string>
+    <string name="fired_red_eye_not_detected">闪光，红眼，无选通返回</string>
+    <string name="fired_red_eye_detected">闪光，红眼，带选通返回</string>
+    <string name="on_red_eye_reduction">闪光，强制，红眼</string>
+    <string name="on_red_eye_not_detected">闪光，强制，红眼，无选通返回</string>
+    <string name="on_red_eye_detected"> 闪光，强制，红眼，带选通返回</string>
+    <string name="auto_fired_red_eye_reduction">闪光，自动，红眼</string>
+    <string name="auto_fired_red_eye_not_detected">闪光，自动，无选通返回，红眼</string>
+    <string name="auto_fired_red_eye_detected">闪光，自动，带选通返回，红眼</string>
+    <string name="normal">正常</string>
+    <string name="soft">柔和</string>
+    <string name="hard">强烈</string>
+
+    <!-- 曝光程序 -->
+    <string name="manual_control">手动控制</string>
+    <string name="program_normal">正常</string>
+    <string name="aperture_priority">光圈优先级</string>
+    <string name="shutter_priority">快门优先级</string>
+    <string name="program_creative">创作程序（偏重使用视野深度）</string>
+    <string name="program_action">操作程序（偏重使用快门速度）</string>
+    <string name="portrait_mode">纵向模式</string>
+    <string name="landscape_mode">横向模式</string>
+
+    <!-- 饱和度 -->
+    <string name="low_saturation">低饱和度</string>
+    <string name="high_saturation">高饱和度</string>
+
+    <!-- 白平衡模式 -->
+    <string name="auto_white_balance">自动</string>
+    <string name="manual_white_balance">手动</string>
+    <string name="second">秒</string>
+    <string name="millimeter">毫米</string>
+
+    <!-- 图片详情页 -->
+    <string name="picture_info_detail">详细信息</string>
+    <string name="picture_info_size">大小</string>
+    <string name="picture_info_dimen">尺寸</string>
+    <string name="picture_info_date">日期</string>
+    <string name="picture_info_path">路径</string>
+    <string name="picture_info_camera">照相机</string>
+    <string name="picture_info_camera_manufacturers">照相机制造商</string>
+    <string name="picture_info_camera_model">照相机型号</string>
+    <string name="picture_info_f_number">光圈值</string>
+    <string name="picture_info_exposure_time">曝光时间</string>
+    <string name="picture_info_iso">ISO速度</string>
+    <string name="picture_info_exposure_compensation">曝光补偿</string>
+    <string name="picture_info_focal_length">焦距</string>
+    <string name="picture_info_maximum_aperture">最大光圈</string>
+    <string name="picture_info_metering_mode">测光模式</string>
+    <string name="picture_info_object_distance">目标距离</string>
+    <string name="picture_info_flash_mode">闪光灯模式</string>
+    <string name="picture_info_advanced_photo_paper">高级照片</string>
+    <string name="picture_info_contrast">对比度</string>
+    <string name="picture_info_brightness">亮度</string>
+    <string name="picture_info_exposure_program">曝光程序</string>
+    <string name="picture_info_saturability">饱和度</string>
+    <string name="picture_info_definition">清晰度</string>
+    <string name="picture_info_white_balance">白平衡</string>
+    <string name="picture_info_open">打开</string>
+    <string name="picture_info_delete">删除</string>
+    <string name="set_wallpager_error">设置壁纸失败</string>
+    <string name="set_wallpager_success">设置壁纸成功</string>
+    <string name="wait_picture_load">图片加载中</string>
+    <string name="first_picture">已经到第一张图片</string>
+    <string name="last_picture">已经到最后一张图片</string>
+    <string name="gif_no_support">gif图片不支持此模式</string>
+	<string name="slide_no_support_switch">当前模式不支持翻页</string>
+	<string name="slide_noly_one">只有一张图片不能启动幻灯片播放模式</string>
+	<string name="slide_end">幻灯片播放结束</string>
+	<string name="path">路径：</string>
+	<string name="wait_for_picture">图片加载中，请等待</string>
+	<string name="picture_no_support">不支持此图片解码显示，请看看此图片是不是属于图片类型文件</string>
+
+
+	<string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+	<string name="delete_dialog_title">你确定要删除该图片吗?</string>
+	<string name="delete_success">删除图片成功</string>
+	<string name="ok_can_scale">按下ok键可以进行缩放</string>
+	<string name="come_to_picture_right">已到图片的右边界</string>
+	<string name="come_to_picture_left">已到图片的左边界</string>
+	<string name="come_to_picture_top">已到图片的上边界</string>
+	<string name="come_to_picture_bottom">已到图片的下边界</string>
+	<!-- &#8230;为省略号的unicode码 -->
+	<string name="set_the_wallpaper_please_wait">设置壁纸中&#8230;请等待</string>
+	<string name="picture_loading_please_wait">图片加载中&#8230;请等待</string>
+	<string name="toast_unable_wallpaper">当前主题不支持设置壁纸</string>
+	<string name="hint">提示</string>
+	<!-- USB设备提示信息 -->
+    <string name="usb_mount">有新的移动磁盘接入</string>
+    <string name="usb_remove">有移动磁盘移除</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="musictip">音乐提示</string>
+    <string name="mark_red">标为</string>
+    <string name="mark_yellow">标为</string>
+    <string name="mark_blue">标为</string>
+    <string name="cancel_mark">取消</string>
+    <string name="musicbtn">音乐</string>
+    <string name="moviebtn">视频</string>
+    <string name="photobtn">图片</string>
+    <string name="sortauto">智能排序</string>
+    <string name="sortname">名称排序</string>
+    <string name="clean">清除缓存</string>
+    <string name="version">版本信息</string>
+    <string name="sort">排序方式</string>
+    <string name="progress_dialog_loading">文件读取中</string>
+    <string name="progress_dialog_file_loading">读取文件中</string>
+    <string name="movie_cannot_find">搜索不到影片</string>
+    <string name="progress_dialog_loading_more">扫描文件还需要一会儿时间，请耐心等候…</string>
+    <string name="label">自定义分类</string>
+    <string name="more_for_label">按菜单键调出更多功能</string>
+    <string name="picture_label_all_clear">清空</string>
+    <string name="label_yellow">黄色</string>
+    <string name="label_red">红色</string>
+    <string name="label_blue">蓝色</string>
+    <string name="tag_success">标记成功</string>
+    <string name="tag_clear_success">清空标记成功</string>
+    <string name="Whether_to_empty_tag">你确定要清空标记吗？</string>
+    <string name="no_to_tag">还没有标记任何图片</string>
+
+    <!-- 音乐部分  音乐播放器 -->
+    <string name="music_effective_nornal">普通</string>
+    <string name="music_effective_folk">乡村</string>
+    <string name="music_effective_dance">舞曲</string>
+    <string name="music_effective_metal">重金属</string>
+    <string name="music_effective_jazz">爵士</string>
+    <string name="music_effective_rock">摇滚</string>
+    <string name="music_playmode_single">单曲循环</string>
+    <string name="music_playmode_order">列表播放</string>
+    <string name="music_playmode_shuffle">随机播放</string>
+    <string name="music_playlist">播放列表</string>
+    <string name="music_quit_player">音乐文件被移除，退出播放器！</string>
+    <string name="music_unknown_artist">未知歌手</string>
+    <string name="music_unknown_album">未知专辑</string>
+    <string name="music_unknown_songname">未知歌名</string>
+    <string name="music_unknown_song_duration">未知时长</string>
+    <string name="music_wrong_lyric_tips">歌词有误？请重新搜索</string>
+    <string name="music_no_lyric_tips">无歌词信息？</string>
+    <string name="music_confirm_network">请检查网络连接！</string>
+    <string name="music_tips_press">点</string>
+    <string name="music_tips_to_search">找找歌词吧！</string>
+    <string name="music_tips_downloading">下载中</string>
+    <string name="music_tips_network_unavaliable">无网络？</string>
+    <string name="music_search_songname">歌名</string>
+    <string name="music_search_artist">歌手</string>
+    <string name="music_search_not_good">当前网络不通畅.请稍后</string>
+    <string name="music_search_try_again">重试</string>
+    <string name="music_searching">搜索中</string>
+    <string name="music_search_no_content"> &#160;对不起，没有找到相应的内容</string>
+    <string name="music_search_no_result">搜不到哦,试试输入歌手名精确搜索吧.</string>
+    <string name="music_search_not_again">不搜了</string>
+    <!-- 音乐部分  音乐浏览界面 -->
+    <string name="musicfolder">文件夹</string>
+    <string name="musicall">所有歌曲</string>
+    <string name="musiclist">歌曲列表</string>
+    <string name="musicsinger">歌手</string>
+    <string name="musicalbum">专辑</string>
+    <string name="musiclike">我喜欢</string>
+    <string name="music_menu_more">按菜单键调出更多功能</string>
+    <string name="music_mudule">音乐</string>
+    <string name="music_file_count">&#160;首</string>
+    <string name="music_file_count_more">&#160;首</string>
+    <string name="music_playing">正在播放</string>
+    <string name="music_pause">播放暂停</string>
+    <string name="music_warn_not_eject">正在处理文件,请勿拔除设备</string>
+    <!-- 音乐部分  音乐文件详情 -->
+    <string name="music_info_artist">歌手：</string>
+    <string name="music_info_album">专辑：</string>
+    <string name="music_info_size">大小：</string>
+    <string name="music_info_format">格式：</string>
+    <string name="music_info_duration">时长：</string>
+    <string name="music_info_bitrate">比特率：</string>
+    <string name="music_info_date">日期：</string>
+    <string name="music_info_path">路径：</string>
+    <string name="music_info_if_delete">你确定要删除该歌曲吗？</string>
+    <string name="music_menu_detail">按菜单键查看详情</string>
+    <string name="scanning_file">文件读取中</string>
+
+</resources>

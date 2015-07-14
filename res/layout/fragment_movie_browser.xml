@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/listlayout"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/name_list"
+            android:layout_width="match_parent"
+            android:layout_height="412dp"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:nextFocusUp="@id/name_list"
+            android:nextFocusDown="@id/name_list"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/moretime"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="420dp"
+            android:gravity="center"
+            android:text=". . ."
+            android:textColor="#665b88"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <com.konka.eplay.modules.ScrollGridView
+        android:id="@+id/movie_gridview"
+        android:layout_width="@dimen/movie_gridview_width"
+        android:layout_height="@dimen/movie_gridview_height"
+        android:layout_marginLeft="@dimen/movie_gridview_marginleft"
+        android:layout_marginTop="@dimen/movie_gridview_margintop"
+        android:fadeScrollbars="true"
+        android:horizontalSpacing="@dimen/movie_gridview_horizontal_spacing"
+        android:listSelector="@drawable/picture_brower_item_focus"
+        android:numColumns="4"
+        android:scrollbarSize="5dp"
+        android:verticalSpacing="@dimen/movie_gridview_vertical_spacing" />
+
+    <ImageView
+        android:id="@+id/border_view_in_mygridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/more_for_label"
+        android:textColor="#5e6266"
+        android:textSize="20sp" />
+
+</FrameLayout>

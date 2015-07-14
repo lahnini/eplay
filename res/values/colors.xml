@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color><!-- 前八位默认是ff（透明度） -->
+    <color name="white">#FFFFFF</color><!-- 前八位默认是ff（透明度） -->
+
+    <color name="picture_info_text_dim">#9b9b9b</color>
+	<color name="picture_info_text_bright">#ffffff</color>
+	<color name="picture_info_name">#fefefe</color>
+	<color name="picture_info_big_title">#6d5776</color>
+
+	<!-- mediaController -->
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="playing_text">#b7ff5a</color>
+
+
+    <color name="songlist_selected">#b2c6ff</color>
+    <color name="songlist_unselected_title">#ffffff</color>
+    <color name="songlist_unselected_name">#a7a7a7</color>
+
+    <color name="allsonglist_tab_unselected">#707790</color>
+    <color name="allsonglist_tab_top_selected">#ffffff</color>
+    <color name="lyricview_tips_text">#59595e</color>
+    <color name="search_lyric_text">#75797f</color>
+    <color name="wave_color">#4a4eaf</color>
+    <color name="text_nofocus">#7d7396</color>
+    <color name="line_nofocus">#5d6355</color>
+    <color name="h_line">#a7a7a7</color>
+    <color name="allsonglist_tab_top_second_selected">#a7a7a7</color>
+</resources>

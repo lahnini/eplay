@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 视频播放器 -->
+    <dimen name="controller_height">143dp</dimen>
+    <dimen name="controller_seekbar_margin_left_right">159dp</dimen>
+    <dimen name="controller_btn_margin_bottom">3dp</dimen>
+    <dimen name="controller_btn_margin_left_right">409dp</dimen>
+    <dimen name="controller_btn_margin_top">40dp</dimen>
+    <dimen name="controller_btn_gap">28dp</dimen>
+    <dimen name="controller_btn_size">71dp</dimen>
+    <dimen name="setting_padding_left_right">11dp</dimen>
+    <dimen name="setting_item_width">475dp</dimen>
+    <dimen name="setting_item_height">64dp</dimen>
+    <dimen name="setting_item_value_width">136dp</dimen>
+    <dimen name="movieplayer_listitem_img_width">213dp</dimen>
+    <dimen name="movieplayer_listitem_img_height">120dp</dimen>
+    <dimen name="seekbar_thumb_radius">25dp</dimen>
+
+    <!-- 视频浏览页的gridview -->
+    <dimen name="movie_gridview_width">1080dp</dimen>
+    <dimen name="movie_gridview_height">522dp</dimen>
+    <dimen name="movie_gridview_marginleft">104dp</dimen>
+    <dimen name="movie_gridview_margintop">133dp</dimen>
+    <dimen name="movie_gridview_vertical_spacing">47dp</dimen>
+    <dimen name="movie_gridview_horizontal_spacing">36dp</dimen>
+    <dimen name="movie_gridview_item_width">234dp</dimen>
+    <dimen name="movie_gridview_item_height">219dp</dimen>
+
+    <!-- mediacontroller -->
+    <dimen name="media_controller_height">84dp</dimen>
+    <dimen name="media_controller_pause_btn_margin_left">5dp</dimen>
+    <dimen name="media_controller_time_margin_left">5dp</dimen>
+    <dimen name="media_controller_time_margin_right">5dp</dimen>
+    <dimen name="media_controller_filename_margin_left">5dp</dimen>
+
+    <!-- 图片详情页 -->
+    <dimen name="picture_info_text">20sp</dimen>
+    <dimen name="picture_info_big_title">32sp</dimen>
+    <dimen name="picture_info_small_title">24sp</dimen>
+    <dimen name="picture_info_thumbnail_width">367dp</dimen>
+    <dimen name="picture_info_thumbnail_height">275dp</dimen>
+
+</resources>

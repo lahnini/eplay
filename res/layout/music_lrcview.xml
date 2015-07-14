@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="610dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lyric_show_layout"
+        android:layout_width="400dp"
+        android:layout_height="610dp" >
+
+        <Button
+            android:id="@+id/music_search_button"
+            android:layout_width="287dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/music_imagebutton_selector" />
+
+        <TextView
+            android:id="@+id/lyricview_text"
+            android:layout_width="267dp"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/music_wrong_lyric_tips"
+            android:textColor="#59595e"
+            android:textSize="16sp" />
+
+        <com.konka.eplay.modules.music.lyric.LrcView
+            android:id="@+id/music_lyricview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/music_search_button"
+            android:layout_marginLeft="60dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_lyric_layout"
+        android:layout_width="400dp"
+        android:layout_height="173dp"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone" >
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="153dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/control_layout_bg" >
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/download_no_lyric"
+            android:layout_width="400dp"
+            android:layout_height="173dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:clickable="true"
+            android:focusable="true" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/no_lyric_tip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/music_no_lyric_tips"
+            android:textColor="#a7a7a7"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/no_network_tip_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_lyric_tip_title"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.7dp"
+            android:text="@string/music_confirm_network"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:id="@+id/no_lyric_tip_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:visibility="invisible"
+             android:layout_marginTop="10.7dp"
+             android:layout_centerHorizontal="true"
+            android:layout_below="@+id/no_lyric_tip_title">
+           <TextView
+           android:id="@+id/lyric_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_tips_press"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/music_search" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_tips_to_search"
+            android:layout_toRightOf="@id/lyric_press"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/lyric_downloading"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/loading_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.7dp" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/music_tips_downloading"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

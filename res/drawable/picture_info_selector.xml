@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这个顺序很重要，先是获取到焦点再点击 -->
+    <item android:drawable="@drawable/focus_clicked" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/picture_brower_item_focus" android:state_focused="true"/>
+    <item android:drawable="@drawable/focus_clicked" android:state_pressed="true"/>
+    <item android:drawable="@color/transparent"/>
+
+</selector>

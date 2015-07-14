@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scale_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusable="true">
+	<FrameLayout 
+	    android:id="@+id/scale_framelayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:focusable="true">
+	    <ImageView
+	        android:id="@+id/image_guide_view"
+	        android:layout_width="413dp" 
+	        android:layout_height="233dp"
+	        android:scaleType="fitCenter"
+	        android:layout_gravity="bottom|right"
+	        android:layout_marginRight="56dp"
+	        android:layout_marginBottom="48dp"/>
+	    <!-- android:alpha设置的是控件的透明度，并使不是颜色的透明度 -->
+	    <ImageView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scaleType="fitXY"
+	        android:src="#150a26"
+	        android:alpha="0.7" 
+	        android:id="@+id/scale_mask_imageview"/>
+	    <!-- android:clickable="true"是为鼠标点击、拖动而添加的 -->
+	    <com.konka.eplay.modules.photo.GuideBorderView
+	        android:id="@+id/guide_border_view"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:focusable="false"
+	        android:scaleType="fitCenter"
+	        android:clickable="true"/>
+
+	    <!-- 显示scale的TextView需要在代码中动态设置位置的显示 -->
+        <TextView 
+            android:id="@+id/guide_small_textView"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="x"
+    	    android:textSize="20sp"
+    	    android:gravity="center"
+    	    android:textColor="#a7a7a7"/>
+	    <TextView 
+    	    android:id="@+id/guide_textView"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="未知"
+    	    android:textSize="32sp"
+    	    android:gravity="center"
+    	    android:textColor="#a7a7a7"/>
+
+	</FrameLayout>	
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/songlist_window_in</item>
+        <item name="android:windowExitAnimation">@anim/songlist_window_out</item>
+    </style>
+
+    <style name="SwitchPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/switch_window_in</item>
+        <item name="android:windowExitAnimation">@anim/switch_window_out</item>
+    </style>
+
+    <style name="SettingPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophide_anim</item>
+    </style>
+<style name="popwin_anim_style">
+     <item name="android:windowEnterAnimation">@anim/menushow</item>
+     <item name="android:windowExitAnimation">@anim/menuhide</item>
+</style>
+    <style name="MusicSettingPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/musicsetting_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/musicsetting_anim_out</item>
+    </style>
+
+    <style name="PictureTagPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/picture_tag_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/picture_tag_anim_out</item>
+    </style>
+    
+    <style name="MovieContorllerAnim">
+        <item name="android:windowEnterAnimation">@anim/movieplayer_controller_in</item>
+        <item name="android:windowExitAnimation">@anim/movieplayer_controller_out</item>
+    </style>
+
+    <style name="MovieListAnim">
+        <item name="android:windowEnterAnimation">@anim/movieplayer_list_in</item>
+        <item name="android:windowExitAnimation">@anim/movieplayer_list_out</item>
+    </style>
+
+    <style name="MovieSettingAnim">
+        <item name="android:windowEnterAnimation">@anim/movieplayer_setting_in</item>
+        <item name="android:windowExitAnimation">@anim/movieplayer_setting_out</item>
+    </style>
+
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+
+    <!-- 图片浏览器中的菜单栏中图标显示的风格 -->
+    <style name="picture_browser_menu_bar_style">
+        <item name="android:layout_width">71dp</item>
+        <item name="android:layout_height">71dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/picture_menu_bar_selector</item>
+    </style>
+
+    <!-- 图片浏览器中的箭头图标显示的风格 -->
+    <style name="picture_browser_arrow_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 图片浏览器中的addPopupWindow中的TextView的显示风格 -->
+    <style name="picture_browser_add_popupwindow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">未知</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/picture_add_popupwindow_selector</item>
+    </style>
+
+    <!-- 图片详情的PopupWindow中的TextView的显示风格 -->
+    <style name="photo_details_popupwindow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:text">未知</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+    <!-- 图片详情的PopupWindow中的TextView的显示风格 -->
+    <style name="like_popupwindow">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:text">未知</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+
+    <!-- 视频播放器 -->
+    <style name="movieplay_setting_item">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/movie_focusable_bg</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="movieplay_setting_text">
+        <item name="android:textColor">@drawable/movieplayer_textcolor_selector</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 读取文件提示dialog -->
+    <style name="progressDialog_holo" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="set_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/moredialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DefaultSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="delete_dialog" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

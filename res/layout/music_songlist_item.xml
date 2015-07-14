@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="384dp"
+    android:layout_height="73.3dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="73.3dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/songlist_title"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_unknown_songname"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/songlist_singer"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/songlist_title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/music_unknown_artist"
+            android:textColor="#a7a7a7"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/songlist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="90dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/music_unknown_song_duration"
+        android:textColor="#a7a7a7"
+        android:textSize="16sp" />
+
+</RelativeLayout>

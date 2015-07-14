@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidProjectTemplateActivity!</string>
+    <string name="app_name">EPlay</string>
+    <string name="versionFormatter">Current Version：%1$s</string>
+ <!-- 版本信息 -->
+
+    <string name="unknown">Unknown</string>
+    <string name="usb_mount">New removable disk access</string>
+    <string name="usb_remove">Removable disk removed</string>
+    <string name="sortauto">Smart</string>
+    <string name="sortname">Name</string>
+
+    <!-- 测光模式 -->
+    <string name="meter_average">Average</string>
+    <string name="meter_center_average">Center average</string>
+    <string name="meter_spot">Spot</string>
+    <string name="meter_multi_spot">Multi spot</string>
+    <string name="meter_multi_segment">Multi Segment</string>
+    <string name="meter_partial">Partial</string>
+
+    <!-- 闪光灯模式 -->
+    <string name="no_flash">No Flash</string>
+    <string name="fired">Fired</string>
+    <string name="fired_return_not_detected">Fired No Detected</string>
+    <string name="fired_return_detected">Fired Return Detected</string>
+    <string name="on">On</string>
+    <string name="on_return_not_detected">On Not Detected</string>
+    <string name="on_return_detected">On Return Detected</string>
+    <string name="off">Off</string>
+    <string name="auto_did_not_fire">Auto Not Fired</string>
+    <string name="auto_fired">Auto Fired</string>
+    <string name="auto_fired_return_not_detected">Auto Fired Not Detected</string>
+    <string name="auto_fired_return_detected">Auto Fired Detected</string>
+    <string name="no_flash_function">No Flash Function</string>
+    <string name="firde_red_eye_reduction">Fired Red Eye</string>
+    <string name="fired_red_eye_not_detected">Fired Red Eye Not Detected</string>
+    <string name="fired_red_eye_detected">Fired Red Eye Detected</string>
+    <string name="on_red_eye_reduction">On Red Eye Reduction</string>
+    <string name="on_red_eye_not_detected">On Red Eye Not Detected</string>
+    <string name="on_red_eye_detected">On Red Eye Detected</string>
+    <string name="auto_fired_red_eye_reduction">Auto Fired Red Eye Reduction</string>
+    <string name="auto_fired_red_eye_not_detected">Auto Fired Red Eye Not Detected</string>
+    <string name="auto_fired_red_eye_detected">Auto Fired Red Eye Detected</string>
+    <string name="normal">Normal</string>
+    <string name="soft">Soft</string>
+    <string name="hard">Hard</string>
+
+    <!-- 曝光程序 -->
+    <string name="manual_control">Manual Control</string>
+    <string name="program_normal">Program Normal</string>
+    <string name="aperture_priority">Aperture Priority</string>
+    <string name="shutter_priority">Shutter Priority</string>
+    <string name="program_creative">Program Creative</string>
+    <string name="program_action">Program Action</string>
+    <string name="portrait_mode">Portrait Mode</string>
+    <string name="landscape_mode">Landscape Mode</string>
+
+    <!-- 饱和度 -->
+    <string name="low_saturation">Low Saturation</string>
+    <string name="high_saturation">High Saturation</string>
+
+    <!-- 白平衡模式 -->
+    <string name="auto_white_balance">Auto White Balance</string>
+    <string name="manual_white_balance">Manual White Balance</string>
+    <string name="set_wallpager_error">Set the wallpaper failure</string>
+    <string name="set_wallpager_success">Set the wallpaper success</string>
+    <string name="wait_picture_load">Image Loading</string>
+    <string name="first_picture">the first picture</string>
+    <string name="last_picture">the last picture</string>
+    <string name="second">second</string>
+    <string name="millimeter">millimeter</string>
+    <string name="gif_no_support">GIF images does not support this mode</string>
+    <string name="picture_no_support">Does not support the decoded images</string>
+    <string name="mark_red">Mark Red</string>
+    <string name="mark_yellow">Mark Yellow</string>
+    <string name="mark_blue">Mark Blue</string>
+
+    <!-- 图片详情页 -->
+    <string name="picture_info_detail">detailed information</string>
+    <string name="picture_info_size">Size</string>
+    <string name="picture_info_dimen">Dimen</string>
+    <string name="picture_info_date">Date</string>
+    <string name="picture_info_path">Path</string>
+    <string name="picture_info_camera">Camera</string>
+    <string name="picture_info_camera_manufacturers">Camera Manufacturers</string>
+    <string name="picture_info_camera_model">Camera Model</string>
+    <string name="picture_info_f_number">FNumber</string>
+    <string name="picture_info_exposure_time">Exposure Time</string>
+    <string name="picture_info_iso">ISO</string>
+    <string name="picture_info_exposure_compensation">Exposure Compensation</string>
+    <string name="picture_info_focal_length">Focal Length</string>
+    <string name="picture_info_maximum_aperture">Maximum Aperture</string>
+    <string name="picture_info_metering_mode">Metering Mode</string>
+    <string name="picture_info_object_distance">Object Distance</string>
+    <string name="picture_info_flash_mode">Flash Mode</string>
+    <string name="picture_info_advanced_photo_paper">Advanced Photo Paper</string>
+    <string name="picture_info_contrast">Contrast</string>
+    <string name="picture_info_brightness">Brightness</string>
+    <string name="picture_info_exposure_program">Exposure Program</string>
+    <string name="picture_info_saturability">Saturability</string>
+    <string name="picture_info_definition">Definition</string>
+    <string name="picture_info_white_balance">White Balance</string>
+    <string name="picture_info_open">Open</string>
+    <string name="picture_info_delete">Delete</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="delete_dialog_title">Delete the picture?</string>
+    <string name="delete_success">Delete pictures success</string>
+    <string name="tag_clear_success">Clear tag success</string>
+    <string name="Whether_to_empty_tag">Are you sure you want to empty tag?</string>
+    <string name="no_to_tag">Do not mark any pictures</string>
+    <string name="slide_no_support_switch">The current mode does not support page</string>
+    <string name="slide_noly_one">Only a picture slides cannot start playback mode</string>
+    <string name="slide_end">Slide the end of the play</string>
+    <string name="ok_can_scale">Press ok key to be able to zoom</string>
+    <string name="come_to_picture_right">come to picture right</string>
+    <string name="come_to_picture_left">come to picture left</string>
+    <string name="come_to_picture_top">come to picture top</string>
+    <string name="come_to_picture_bottom">come to picture bottom</string>
+    <string name="hint">hint</string>
+    <string name="wait_for_picture">In the image loading, please wait</string>
+
+    <!-- &#8230;为省略号的unicode码 -->
+    <string name="set_the_wallpaper_please_wait">Set the wallpaper&#8230;Please wait for</string>
+    <string name="picture_loading_please_wait">Loading of images&#8230;Please wait for</string>
+    <string name="more_for_label">According to the menu out more</string>
+    <string name="picture_label_all_clear">clear</string>
+    <string name="label_yellow">Yellow</string>
+    <string name="label_red">Red</string>
+    <string name="label_blue">Blue</string>
+    <string name="tag_success">tag success</string>
+    <string name="toast_unable_wallpaper">Unable to be a wallpaper!</string>
+
+    <!-- 音乐部分  音乐播放器 -->
+    <string name="music_effective_nornal">Normal</string>
+    <string name="music_effective_folk">Folk</string>
+    <string name="music_effective_dance">Dance</string>
+    <string name="music_effective_metal">Metal</string>
+    <string name="music_effective_jazz">Jazz</string>
+    <string name="music_effective_rock">Rock</string>
+    <string name="music_playmode_single">Single</string>
+    <string name="music_playmode_order">Order</string>
+    <string name="music_playmode_shuffle">Shuffle</string>
+    <string name="music_playlist">Playlist</string>
+    <string name="music_quit_player">Music file is removed, quit player now !</string>
+    <string name="music_unknown_artist">Unknown Artist</string>
+    <string name="music_unknown_album">Unknown Album</string>
+    <string name="music_unknown_songname">Unknown name</string>
+    <string name="music_unknown_song_duration">Unknown duration</string>
+    <string name="music_wrong_lyric_tips">Lyrics wrong? Please search again</string>
+    <string name="music_no_lyric_tips">No lyrics ?</string>
+    <string name="music_confirm_network">Please check the network connection !</string>
+    <string name="music_tips_press">Press</string>
+    <string name="music_tips_to_search">to search lyrics ！</string>
+    <string name="music_tips_downloading">Downloading</string>
+    <string name="music_tips_network_unavaliable">Network unavaliable ?</string>
+    <string name="music_search_songname">Song name</string>
+    <string name="music_search_artist">Artist</string>
+    <string name="music_search_not_good">Current network is not available.Please </string>
+    <string name="music_search_try_again">try again</string>
+    <string name="music_searching">Searching</string>
+    <string name="music_search_no_content"> &#160;sorry, have no appropriate content</string>
+    <string name="music_search_no_result">Oops! Enter the artist to refine search.</string>
+    <string name="music_search_not_again">Not again</string>
+    <!-- 音乐部分  音乐浏览界面 -->
+    <string name="musicfolder">Folder</string>
+    <string name="musicall">All songs</string>
+    <string name="musiclist">All</string>
+    <string name="musicsinger">Singer</string>
+    <string name="musicalbum">Album</string>
+    <string name="musiclike">Favorite</string>
+    <string name="music_menu_more">Menu key View More</string>
+    <string name="music_mudule">Music</string>
+    <string name="music_file_count">&#160;file</string>
+    <string name="music_file_count_more">&#160;files</string>
+    <string name="music_playing">Now Playing</string>
+    <string name="music_pause">Pause</string>
+      <string name="music_warn_not_eject">File being processed, do not remove a removable storage device</string>
+
+    <!-- 音乐部分  音乐文件详情 -->
+    <string name="music_info_artist">Artist：</string>
+    <string name="music_info_album">Album：</string>
+    <string name="music_info_size">Size：</string>
+    <string name="music_info_format">Format：</string>
+    <string name="music_info_duration">Duration：</string>
+    <string name="music_info_bitrate">Bitrate：</string>
+    <string name="music_info_date">Date：</string>
+    <string name="music_info_path">Path：</string>
+    <string name="music_info_if_delete">Are you sure you want to delete this song?</string>
+    <string name="music_menu_detail">Press the Menu key to view the details</string>
+    <string name="scanning_file">Scanning files</string>
+    <string name="progress_dialog_loading_more">Scan files also need a few moments, please be patient ...</string>
+
+</resources>

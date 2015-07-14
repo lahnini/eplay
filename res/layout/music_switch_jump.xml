@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_switch_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/music_switch_photo_bg"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="115dp"
+        android:background="@drawable/switch_bg" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/music_switch_photo"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="115dp"
+        android:background="@drawable/switch_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/switch_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="85dp"
+            android:text="图片"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/music_switch_video_bg"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/switch_bg" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/music_switch_video"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/switch_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/switch_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="85dp"
+            android:text="视频"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+</FrameLayout>

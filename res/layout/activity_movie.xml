@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jbshape" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="49dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="31dp"
+            android:layout_marginRight="22dp"
+            android:duplicateParentState="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_img_selector" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:maxEms="30"
+            android:singleLine="true"
+            android:text="@string/moviebtn"
+            android:textColor="@drawable/back_textcolor_selector"
+            android:textSize="@dimen/picture_info_big_title" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/movie_music_tip_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/music_imagebutton_selector"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/music_tip_bg" />
+
+        <ImageView
+            android:id="@+id/movie_music_wave"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/isplay" />
+
+        <com.konka.eplay.modules.AlwaysMarqueeTextView
+            android:id="@+id/movie_music_songname"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="46dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:maxWidth="167dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#b6cfe8"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/movie_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/can_not_find_video"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <com.konka.eplay.modules.AlwaysMarqueeTextView
+        android:id="@+id/file_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="132dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="#4c426b"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/movie_top_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="62dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:background="@drawable/movie_focusable_bg" >
+        </View>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/topbtn" />
+    </FrameLayout>
+
+</FrameLayout>

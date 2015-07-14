@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.konka.eplay"
+    android:layout_width="match_parent"
+    android:layout_height="81.3dp"
+    android:background="@drawable/control_layout_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="81.3dp"
+        android:focusable="false" />
+
+    <ImageView
+       android:layout_width="65.3dp"
+        android:layout_height="65.3dp"
+        android:layout_marginLeft="46dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/musiclist_singer_bg" />
+
+    <com.konka.eplay.modules.music.roundedview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/allsong_singer_profile"
+        android:layout_width="58.7dp"
+        android:layout_height="58.7dp"
+        android:layout_marginLeft="49.3dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/m"
+        app:corner_radius="10dp"
+        app:mutate_background="true"
+        app:oval="true" />
+
+    <TextView
+        android:id="@+id/allsong_singer_artist"
+        android:layout_width="313.3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.7dp"
+        android:layout_toRightOf="@id/allsong_singer_profile"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/music_unknown_artist"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/allsong_singer_count"
+        android:layout_width="73.3dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/allsong_singer_artist"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/unknown"
+        android:textColor="#a7a7a7"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="46dp"
+        android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+        android:src="@drawable/music_right_arrow" />
+
+</RelativeLayout>

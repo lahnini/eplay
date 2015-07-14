@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jbshape"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <Button 
+            android:layout_width="16dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/singerpic"/>
+        <TextView 
+            android:id="@+id/singername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView 
+            android:id="@+id/count"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+<ListView 
+    android:layout_width="1000dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:id="@+id/playlistview"/>
+   <Button
+        android:id="@+id/music_top_btn"
+        android:layout_gravity="right|bottom"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/topbtn" />
+</LinearLayout>

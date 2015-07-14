@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jbshape"
+    android:orientation="vertical"
+    tools:context="com.konka.eplay.modules.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/main_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="41dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:focusable="false"
+            android:nextFocusRight="@id/appicon"
+            android:nextFocusLeft="@id/appicon"
+            android:nextFocusDown="@id/appicon"
+            android:nextFocusUp="@id/appicon"
+            android:src="@drawable/app" />
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/appicon"
+            android:text="@string/app_name"
+            android:textColor="#cfcdd6"
+            android:textSize="32sp" />
+
+        <FrameLayout
+            android:id="@+id/morelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/music_imagebutton_selector"
+            android:focusable="true" >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/more" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/music_tip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/morelayout"
+            android:background="@drawable/music_imagebutton_selector"
+            android:focusable="true"
+            android:visibility="invisible" >
+            <View
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/music_tip_bg" />
+
+            <ImageView
+                android:id="@+id/music_wave"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/isplay" />
+
+            <com.konka.eplay.modules.AlwaysMarqueeTextView
+                android:id="@+id/music_songname"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:maxWidth="167dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46dp"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#b6cfe8"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.konka.eplay.modules.IntegratedRelativeLayout
+        android:id="@+id/main_click_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:focusable="true">
+
+        <FrameLayout
+            android:id="@+id/fileslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="296dp"
+                android:layout_height="329dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/movie"
+                android:focusable="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:text="文件"
+                android:textColor="#d6c6c6"
+                android:textSize="31sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/photolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fileslayout"
+            android:layout_marginLeft="13dp"
+           
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="296dp"
+                android:layout_height="329dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/photo"
+                android:focusable="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:text="@string/photobtn"
+                android:textColor="#d6c6c6"
+                android:textSize="31sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/movielayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/photolayout"
+            
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="296dp"
+                android:layout_height="329dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/movie"
+                android:focusable="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:text="@string/moviebtn"
+                android:textColor="#d6c6c6"
+                android:textSize="31sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/musiclayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/movielayout"
+           
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="296dp"
+                android:layout_height="329dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/music"
+                android:focusable="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:text="@string/musicbtn"
+                android:textColor="#d6c6c6"
+                android:textSize="31sp" />
+        </FrameLayout>
+    </com.konka.eplay.modules.IntegratedRelativeLayout>
+</LinearLayout>

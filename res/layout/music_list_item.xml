@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <FrameLayout
+        android:id="@+id/musicleftlayout"
+        android:layout_width="800dp"
+        android:layout_height="60dp"
+        >
+        <!-- <ImageView
+            android:layout_width="800dp"
+            android:layout_height="60dp"
+            android:focusable="true"
+            android:background="@drawable/layout_selector"/> -->
+
+    <ImageView
+        android:id="@+id/musicimg"
+        android:layout_width="18dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/music_icon"/>
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="70dp"
+        android:layout_width="400dp"
+         android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/musicsinger"
+        android:layout_marginLeft="490dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/musiclength"
+        android:layout_gravity="center_vertical"
+         android:gravity="center_vertical"
+        android:layout_marginLeft="690dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/islike"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:background="@drawable/musicplayer_islike_no"/>
+
+</LinearLayout>

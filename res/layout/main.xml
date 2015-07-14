@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/idGo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片浏览入口"
+        android:id="@+id/idPictureBrower"/>
+
+    <Button
+        android:id="@+id/music_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐播放" />
+     <Button
+        android:id="@+id/music_player_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐播放" />
+
+</LinearLayout>

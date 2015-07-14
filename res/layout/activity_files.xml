@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jbshape" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="49dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="31dp"
+            android:layout_marginRight="22dp"
+            android:duplicateParentState="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_img_selector" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:maxEms="30"
+            android:singleLine="true"
+            android:text="@string/moviebtn"
+            android:textColor="@drawable/back_textcolor_selector"
+            android:textSize="@dimen/picture_info_big_title" />
+    </LinearLayout>
+
+    <com.konka.eplay.modules.ScrollGridView
+        android:id="@+id/local_files_gridview"
+        android:layout_width="1080dp"
+        android:layout_height="390dp"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="215dp"
+        android:fadeScrollbars="true"
+        android:horizontalSpacing="35dp"
+        android:listSelector="@drawable/picture_brower_item_focus"
+        android:numColumns="4"
+        android:scrollbarSize="5dp"
+        android:verticalSpacing="40dp" >
+    </com.konka.eplay.modules.ScrollGridView>
+
+
+    <TextView
+        android:id="@+id/local_files_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="无法找到图片"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <com.konka.eplay.modules.AlwaysMarqueeTextView
+        android:id="@+id/file_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="132dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="#4c426b"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/movie_top_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="62dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:background="@drawable/movie_focusable_bg" >
+        </View>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/topbtn" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/border_view_in_files_gridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</FrameLayout>

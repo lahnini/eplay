@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="169.3dp"
+    android:layout_height="212dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="169.3dp"
+        android:layout_height="212dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/music_grid_folder"
+            android:layout_width="fill_parent"
+            android:layout_height="17.4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/com_folder"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/music_grid_thumnail"
+            android:layout_width="169.3dp"
+            android:layout_height="169.3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.7dp"
+            android:src="@drawable/m"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/music_grid_bottom"
+            android:layout_width="169.3dp"
+            android:layout_height="33.3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="144.7dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cover" />
+
+            <TextView
+                android:id="@+id/music_grid_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="@string/unknown"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/music_grid_foldername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="186.3dp"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/unknown"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+</LinearLayout>

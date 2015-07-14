@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item type="id" name="tag_load"></item>
+	<item type="id" name="tag_position"></item>
+	<item type="id" name="tag_width"></item>
+	<item type="id" name="tag_height"></item>
+	<item type="id" name="tag_bitmap"></item>
+	<item type="id" name="tag_file_name"></item>
+	<item type="id" name="tag_type"></item>
+
+</resources>
